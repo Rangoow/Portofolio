@@ -1,0 +1,22 @@
+{
+  "name": "portofolio",
+  "version": "1.0.0",
+  "description": "responsive portofolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rangoow/Portofolio.git"
+  },
+  "author": "Noe Esparsa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rangoow/Portofolio/issues"
+  },
+  "homepage": "https://github.com/Rangoow/Portofolio#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
