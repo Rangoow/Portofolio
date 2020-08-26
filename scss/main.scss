@@ -54,7 +54,7 @@ header {
 main {
   padding: 4rem;
   //height: 100%;
-  min-height: calc(100vh-60px);
+  min-height: calc(100vh - 60px);
 
   .icons {
     margin-top: 1rem;
@@ -116,6 +116,79 @@ main {
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
+}
+
+//Work/Projects
+
+.projects{
+  display: grid;
+  gap:0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img{
+    width: 100%;
+    border: 3px #fff solid;
+
+    &:hover{
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
+//Contact Page
+.boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+
+  div{
+    font-size: 1.5rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    @include easeOut;
+
+    &:hover{
+      padding: 0.5rem 1.5rem;
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+      span{
+        color: set-text-color($secondary-color);
+      }
+    }
+  }
+
+}
+
+//Button Styles
+.btn{
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  text-align: center;
+  &:hover{
+    background: $secondary-color;
+    color:set-text-color($secondary-color);
+  }
+
+}
+
+.btn-dark{
+  @extend .btn;
+  background: darken($primary-color,50);
+  color: #fff;
+}
+
+.btn-light{
+  @extend .btn;
+  background: lighten($primary-color,50);
+  color: #333;
+
 }
 
 
