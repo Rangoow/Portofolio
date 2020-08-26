@@ -1,4 +1,6 @@
-@import "config";
+@import 'config';
+@import'menu';
+
 //GENERAL
 
 * {
@@ -42,7 +44,7 @@ a {
 header {
   position: fixed;
   z-index: 2;
-  widows: 100%;
+  width: 100%;
 }
 
 .text-secondary {
