@@ -24,7 +24,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -55,20 +54,20 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg");
+      background: url("../img/portrait.png");
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border: solid 4px #ee8b1a; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: #ee8b1a; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-size: 35px;
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 400;
@@ -76,7 +75,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #ee8b1a; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -112,7 +111,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.9); }
+      background: rgba(68, 68, 68, 0.85); }
 
 h1,
 h2,
@@ -128,7 +127,8 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(73, 73, 73, 0.7);
+    display: inline-block; }
 
 a {
   color: #fff;
@@ -140,7 +140,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #ee8b1a; }
 
 main {
   padding: 4rem;
@@ -150,7 +150,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #ee8b1a;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -160,26 +160,33 @@ main {
 .about-info {
   display: grid;
   gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'skill study work';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #eece1a 3px solid; }
+    border: #ee8b1a 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
-  .about-info .job-1 {
-    grid-area: job1; }
-  .about-info .job-2 {
-    grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
-  .about-info .job {
+  .about-info .skill {
+    grid-area: skill; }
+  .about-info .study {
+    grid-area: study; }
+  .about-info .work {
+    grid-area: work; }
+  .about-info .infos {
     background: #515151;
-    padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    padding: 1rem;
+    border-bottom: #ee8b1a 5px solid;
+    border-radius: 10px; }
+    .about-info .infos h3 {
+      text-transform: uppercase;
+      font-size: 1.5rem; }
+    .about-info .infos h5 {
+      text-transform: uppercase;
+      font-size: 1rem; }
 
 .projects {
   display: grid;
@@ -190,7 +197,7 @@ main {
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #eece1a;
+      border-color: #ee8b1a;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -204,10 +211,11 @@ main {
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
+    cursor: pointer;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
-      padding: 0.5rem 1.5rem;
-      background: #eece1a;
+      padding: 1rem 1.5rem;
+      background: #ee8b1a;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -219,7 +227,7 @@ main {
   margin-bottom: 0.3rem;
   text-align: center; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
+    background: #ee8b1a;
     color: #000; }
 
 .btn-dark {
@@ -266,7 +274,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url(../img/portrait_small.jpg);
+      background: url(../img/portrait_small.png);
       width: 150px;
       height: 150px; }
   .about-info {

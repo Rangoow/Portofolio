@@ -32,7 +32,8 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
+    background: rgba(lighten($primary-color, 2), 0.7);
+    display: inline-block;
   }
 }
 
@@ -62,6 +63,7 @@ main {
     a {
       padding: 0.4rem;
 
+      
       &:hover {
         color: $secondary-color;
         @include easeOut();
@@ -83,7 +85,7 @@ main {
   gap: 30px;
   grid-template-areas: 
   'bioimage bio bio'
-  'job1 job2 job3';
+  'skill study work';
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image{
@@ -99,26 +101,37 @@ main {
     font-size: 1.5rem;
   }
   
-  .job-1{
-    grid-area: job1;
+  .skill{
+    grid-area: skill;
   }
   
-  .job-2{
-    grid-area: job2;
+  .study{
+    grid-area: study;
   }
   
-  .job-3{
-    grid-area: job3;
+  .work{
+    grid-area: work;
   }
   
-  .job{
+  .infos{
     background: lighten($primary-color, 5);
-    padding: 0.5rem;
+    padding: 1rem;
     border-bottom: $secondary-color 5px solid;
+    border-radius: 10px;
+    
+    h3{
+      text-transform: uppercase;
+      font-size: 1.5rem;
+    }
+
+    h5{
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
   }
 }
 
-//Work/Projects
+//Work & Projects
 
 .projects{
   display: grid;
@@ -150,10 +163,11 @@ main {
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
+    cursor: pointer;
     @include easeOut;
 
     &:hover{
-      padding: 0.5rem 1.5rem;
+      padding: 1rem 1.5rem;
       background: $secondary-color;
       color: set-text-color($secondary-color);
       span{
